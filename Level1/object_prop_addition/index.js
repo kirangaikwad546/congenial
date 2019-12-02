@@ -1,4 +1,4 @@
-// add all the numberical properties of an object 
+// add all the numerical properties of an object 
 
 // example: obj = {
 //     a:2,
@@ -10,7 +10,12 @@
 // return undefined in all other cases
 
 const object_prop_addition = (obj) => {
-    return null;
+    a:3,
+    b:5,
+    c:5,
+    d:'1'
+    
+    return obj;
 }
 
 module.exports = { object_prop_addition };
