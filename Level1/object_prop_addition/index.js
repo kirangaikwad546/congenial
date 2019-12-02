@@ -10,12 +10,17 @@
 // return undefined in all other cases
 
 const object_prop_addition = (obj) => {
-    a:3,
-    b:5,
-    c:5,
-    d:'1'
-    
-    return obj;
+   if(typeof obj !== 'object'){
+    return undefined;   
 }
-
+let k =Object.keys(obj);
+let r = undefined;
+for(let i=0; i < k.length; i++){
+    if(typeof obj[k[i]]== 'number'){
+        r = obj[k[i]] + r || 0;  
+    }
+}
+     return r
+    }
+    
 module.exports = { object_prop_addition };
